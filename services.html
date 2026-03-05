@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="public/Fevicon/IMG_7447.jpg">
+  <title>Wedding Planning Services | 7Diamond Events — Complete Wedding Management</title>
+  <meta name="description"
+    content="Explore 7Diamond Events' premium wedding services — pre-wedding planning, decor design, event production, guest management, ceremony coordination, photography, and post-wedding support. Website by brandomize — the fastest and most creative web developer in Hisar Haryana and across country.">
+  <meta name="keywords"
+    content="wedding planning services, wedding decor design, event production, guest management, ceremony management, wedding photography, post-wedding services, 7Diamond Events, brandomize web developer Hisar">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="brandomize — fastest and most creative web developer in Hisar Haryana">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wedding Planning Services | 7Diamond Events">
+  <meta property="og:description"
+    content="7Diamond Events offers end-to-end premium wedding services — from planning and decor to photography and post-wedding coordination.">
+  <meta property="og:site_name" content="7Diamond Events">
+  <meta property="og:image" content="public/image-page-data/wedding/5.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wedding Planning Services | 7Diamond Events">
+  <meta name="twitter:description"
+    content="7Diamond Events offers end-to-end premium wedding services — from planning and decor to photography and post-wedding coordination.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=3.0">
+  <link rel="stylesheet" href="css/components.css?v=3.0">
+  <link rel="stylesheet" href="css/animations.css?v=3.0" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/animations.css?v=3.0"></noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Wedding Planning & Management",
+    "provider": {
+      "@type": "EventPlanner",
+      "name": "7Diamond Events",
+      "url": "https://7diamondevents.com",
+      "telephone": "+91 70150 52499",
+      "email": "info@7diamondevents.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hisar",
+        "addressRegion": "Haryana",
+        "addressCountry": "IN"
+      }
+    },
+    "areaServed": ["Hisar", "Delhi NCR", "Noida", "Gurugram", "India"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Wedding Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pre-Wedding Planning" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wedding Design & Decor" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Event Production" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Guest & Hospitality Management" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ceremony Management" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Photography & Content" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Post-Wedding Services" } }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    .services-hero {
+      padding: 10rem 0 5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .services-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, var(--color-gold-light) 0%, transparent 70%);
+      opacity: 0.5;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .services-hero .container { position: relative; z-index: 1; }
+    .services-hero-badge {
+      display: inline-block;
+      padding: 0.5rem 1.25rem;
+      background: var(--color-gold-light);
+      border: 1px solid rgba(197, 160, 89, 0.2);
+      border-radius: 2rem;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--color-gold-hover);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .services-hero h1 {
+      font-size: clamp(2.25rem, 5vw, 3.5rem);
+      max-width: 44rem;
+      margin: 0 auto 1.5rem;
+      letter-spacing: -0.03em;
+    }
+    .services-hero p {
+      font-size: clamp(1rem, 2vw, 1.125rem);
+      max-width: 36rem;
+      margin: 0 auto;
+      color: var(--color-dark-light);
+      line-height: 1.7;
+    }
+
+    .detail-section { padding: 5rem 0; }
+    .detail-section:nth-child(even) { background: var(--color-silver-50); }
+    .detail-section:nth-child(odd) { background: var(--color-off-white); }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .detail-grid.reverse .detail-visual { order: -1; }
+
+    .detail-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: var(--color-gold);
+      color: var(--color-white);
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 0.875rem;
+      margin-bottom: 1rem;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+    }
+    .detail-content h2 {
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+    .detail-content > p {
+      font-size: 1rem;
+      color: var(--color-dark-light);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .detail-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .detail-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.9375rem;
+      color: var(--color-dark-light);
+      line-height: 1.5;
+    }
+    .detail-list li svg {
+      flex-shrink: 0;
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-top: 0.125rem;
+    }
+    .detail-visual {
+      position: relative;
+    }
+    .detail-image {
+      aspect-ratio: 4 / 5;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      background: var(--color-silver-100);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+    .detail-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .detail-image:hover img {
+      transform: scale(1.03);
+    }
+
+    .profile-download-section {
+      padding: 4rem 0;
+      background: var(--color-gold-light);
+      text-align: center;
+    }
+    .profile-download-section h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin-bottom: 0.75rem;
+    }
+    .profile-download-section p {
+      color: var(--color-dark-light);
+      margin-bottom: 2rem;
+      max-width: 30rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 1024px) {
+      .detail-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .detail-grid.reverse .detail-visual { order: 0; }
+    }
+    @media (max-width: 768px) {
+      .services-hero { padding: 8rem 0 3.5rem; }
+      .detail-section { padding: 3.5rem 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header scrolled">
+    <nav class="nav">
+      <div class="logo-container">
+        <a href="index.html" class="logo">7Diamond Events</a>
+        <a href="https://brandomize.netlify.app/" target="_blank" class="logo-subtitle" title="Fastest and most creative web developer in Hisar Haryana and across country">by brandomize</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Wedding Moments</a></li>
+        <li><a href="luxury.html">Luxury</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="services-hero bg-silver">
+    <div class="container">
+      <span class="services-hero-badge">7Diamond Events</span>
+      <h1>Our Premium Wedding Services</h1>
+      <p>From the first consultation to the final farewell, we orchestrate every element of your celebration with precision, artistry, and heart.</p>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES GRID (dynamic) ===== -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">What We Offer</h2>
+        <p class="section-description">Seven specialized departments working together to deliver a seamless wedding experience — so you can simply enjoy your big day.</p>
+      </div>
+      <div id="services-grid" class="grid grid-cols-3"></div>
+    </div>
+  </section>
+
+  <!-- ===== DETAILED SERVICE SECTIONS ===== -->
+  <div id="services-detail"></div>
+
+  <!-- ===== DOWNLOAD COMPANY PROFILE ===== -->
+  <section class="profile-download-section">
+    <div class="container">
+      <h2>Get Our Company Profile</h2>
+      <p>Download our detailed company profile to explore our services, portfolio, and client testimonials.</p>
+      <a href="assets/7diamond-profile.pdf" target="_blank" class="btn btn-primary btn-large" download>
+        Download Company Profile
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== REAL WEDDING STORIES ===== -->
+  <section class="section bg-silver">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Real Wedding Stories</h2>
+        <p class="section-description">Browse real weddings we've had the privilege of planning, designing, and capturing from start to finish.</p>
+      </div>
+      <div id="stories-grid" class="grid grid-cols-3"></div>
+      <div class="text-center mt-4">
+        <a href="gallery.html" class="btn btn-outline">View All Stories →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section bg-dark" style="padding:5rem 0;">
+    <div class="container text-center">
+      <p style="color:var(--color-gold);text-transform:uppercase;letter-spacing:0.15em;font-size:0.8125rem;font-weight:600;margin-bottom:1.5rem;">Let's create something extraordinary together</p>
+      <h2 class="section-title" style="color:white;font-size:clamp(2rem,5vw,3.5rem);max-width:48rem;margin:0 auto 1.5rem;">Ready to Start Planning?</h2>
+      <p class="section-description" style="color:rgba(255,255,255,0.7);max-width:36rem;margin:0 auto 2.5rem;">Every great wedding begins with a conversation. Tell us your vision — we'll handle the rest with meticulous care and creative excellence.</p>
+      <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-primary btn-large">
+          Book a Consultation
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/917015052499" class="btn btn-outline btn-large" target="_blank" rel="noopener" style="color:white;border-color:rgba(255,255,255,0.3);">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEO CONTENT ===== -->
+  <section class="seo-content">
+    <div class="container" style="max-width:52rem;">
+      <h2 class="section-title text-center">Complete Wedding Management by 7Diamond Events</h2>
+      <p>7Diamond Events is a full-service wedding planning and management company based in Hisar, Haryana, serving clients across India including Delhi NCR, Gurugram, Noida, Chandigarh, Jaipur, and international destinations. We specialize in creating seamless, elegant, and unforgettable wedding experiences that reflect each couple's unique personality and cultural heritage.</p>
+      <p>Our seven core service departments — Pre-Wedding Planning, Wedding Design & Decor, Event Production, Guest & Hospitality Management, Ceremony Management, Photography & Content, and Post-Wedding Services — work in concert to deliver celebrations that exceed expectations in every detail.</p>
+      <p>Whether you envision an intimate home gathering or a grand destination celebration, our experienced team brings strategic planning, creative vision, and strong vendor relationships to ensure on-time execution, budget transparency, and a stress-free experience from start to finish.</p>
+      <p>With over 100 weddings planned and a network of 500+ verified vendors, 7Diamond Events has become a trusted name for wedding management in Haryana and across North India. Let us turn your dream wedding into a beautiful reality.</p>
+      <p style="font-size:0.8125rem;color:var(--color-text-secondary);margin-top:2rem;">Website designed and developed by <a href="https://brandomize.netlify.app/" target="_blank" rel="noopener" style="color:var(--color-gold);font-weight:500;">brandomize</a> — the fastest and most creative web developer in Hisar Haryana and across country.</p>
+    </div>
+  </section>
+
+  <!-- Story Modal -->
+  <div id="story-modal" class="story-modal">
+    <div class="story-modal-overlay"></div>
+    <div class="story-modal-content">
+      <button class="story-modal-close" aria-label="Close">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="story-modal-body">
+        <div class="story-modal-hero">
+          <img id="modal-hero-image" src="" alt="Wedding story highlight">
+          <div class="story-modal-badge" id="modal-badge"></div>
+        </div>
+        <div class="story-modal-info">
+          <h2 id="modal-couple-name"></h2>
+          <div class="story-modal-meta">
+            <span id="modal-location"></span>
+            <span class="story-modal-separator">•</span>
+            <span id="modal-date"></span>
+          </div>
+          <div class="story-modal-gallery" id="modal-gallery"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>7Diamond Events</h3>
+          <p>Complete Wedding Planning & Management Company designed for couples who seek sophistication, exclusivity, and flawless execution.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Wedding Moments</a></li>
+            <li><a href="luxury.html">Luxury</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@7diamondevents.com">info@7diamondevents.com</a></li>
+            <li><a href="tel:+917015052499">+91 70150 52499</a></li>
+            <li>Hisar, India</li>
+            <li><a href="https://instagram.com/7diamondevents" target="_blank" rel="noopener">@7diamondevents</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 7Diamond Events. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-credit">
+          Secured & Created by
+          <a href="https://brandomize.netlify.app/" target="_blank" rel="noopener" title="Fastest and most creative web developer in Hisar Haryana">brandomize.studio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/services-data.js" defer></script>
+  <script src="js/stories-data.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      const serviceDetails = [
+        {
+          id: 'pre-wedding-planning',
+          bullets: [
+            'Comprehensive budget planning & cost optimization',
+            'Theme conceptualization & mood boards',
+            'Vendor sourcing & contract negotiations',
+            'Detailed timeline & schedule creation',
+            'Venue selection & site visits'
+          ]
+        },
+        {
+          id: 'wedding-design-decor',
+          bullets: [
+            'Theme-based decor design & execution',
+            'Stage & mandap design with custom elements',
+            'Luxury floral styling & installations',
+            'Lighting design — fairy lights, chandeliers, LED',
+            'Custom installations & photo-op setups'
+          ]
+        },
+        {
+          id: 'event-production',
+          bullets: [
+            'Sound system & technical infrastructure',
+            'LED walls, projectors & visual displays',
+            'Artist & DJ booking and coordination',
+            'Stage & truss setup for performances',
+            'Pyrotechnics, cold sparks & special effects'
+          ]
+        },
+        {
+          id: 'guest-hospitality',
+          bullets: [
+            'RSVP management & guest list coordination',
+            'Airport & railway station transfers',
+            'Hotel bookings & room block management',
+            'Welcome hampers & personalized gifts',
+            'On-site guest help desk & concierge'
+          ]
+        },
+        {
+          id: 'ceremony-management',
+          bullets: [
+            'Haldi, Mehendi & Sangeet planning and flow',
+            'Baraat coordination — band, DJ, horse/car',
+            'Creative bride & groom entry concepts',
+            'Ritual coordination with pandit & family',
+            'Reception flow, toasts & farewell management'
+          ]
+        },
+        {
+          id: 'photography-content',
+          bullets: [
+            'Wedding photography & cinematic videography',
+            'Pre-wedding shoots — destination & studio',
+            'Drone & aerial coverage for grand setups',
+            'Social media reels & highlight videos',
+            'Same-day edits for reception screening'
+          ]
+        },
+        {
+          id: 'post-wedding-services',
+          bullets: [
+            'Album design coordination & delivery',
+            'Vendor settlements & payment management',
+            'Return gift distribution & logistics',
+            'Post-event venue cleanup coordination',
+            'Feedback collection & testimonial support'
+          ]
+        }
+      ];
+
+      const checkSvg = '<svg width="16" height="16" fill="none" stroke="var(--color-gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>';
+
+      // --- Services Grid ---
+      const servicesGrid = document.getElementById('services-grid');
+      if (servicesGrid && typeof servicesData !== 'undefined') {
+        servicesData.forEach(service => {
+          const card = document.createElement('div');
+          card.className = 'story-card stagger-item';
+          card.innerHTML = `
+            <a href="#${service.id}" class="story-card-link" style="text-decoration:none;color:inherit;">
+              <div class="card-image" style="aspect-ratio:4/3;">
+                <img src="${service.image}" alt="${service.title} — 7Diamond Events" loading="lazy">
+              </div>
+              <div class="card-content">
+                <h3>${service.title}</h3>
+                <p class="story-excerpt">${service.description}</p>
+                <span class="story-link">Learn More →</span>
+              </div>
+            </a>
+          `;
+          servicesGrid.appendChild(card);
+        });
+      }
+
+      // --- Detailed Service Sections ---
+      const detailContainer = document.getElementById('services-detail');
+      if (detailContainer && typeof servicesData !== 'undefined') {
+        servicesData.forEach((service, index) => {
+          const details = serviceDetails.find(d => d.id === service.id);
+          const isReverse = index % 2 !== 0;
+
+          const section = document.createElement('section');
+          section.className = 'detail-section';
+          section.id = service.id;
+          section.innerHTML = `
+            <div class="container">
+              <div class="detail-grid${isReverse ? ' reverse' : ''}">
+                <div class="detail-content fade-in">
+                  <span class="detail-number">${index + 1}</span>
+                  <h2>${service.title}</h2>
+                  <p>${service.description}</p>
+                  ${details ? `<ul class="detail-list">${details.bullets.map(b => `<li>${checkSvg}<span>${b}</span></li>`).join('')}</ul>` : ''}
+                  <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="detail-visual fade-in">
+                  <div class="detail-image">
+                    <img src="${service.image}" alt="${service.title} by 7Diamond Events" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+          detailContainer.appendChild(section);
+        });
+      }
+
+      // --- Wedding Stories ---
+      const storiesGrid = document.getElementById('stories-grid');
+      if (!storiesGrid) return;
+      const stories = typeof storiesData !== 'undefined' ? storiesData : null;
+      if (!stories || !Array.isArray(stories) || stories.length === 0) return;
+
+      stories.slice(0, 3).forEach(story => {
+        const card = document.createElement('div');
+        card.className = 'story-card';
+        card.innerHTML = `
+          <a href="#" class="story-card-link" data-story-id="${story.id}">
+            <div class="card-image">
+              <img src="${story.heroImage}" alt="${story.coupleName} — wedding story" loading="lazy">
+              <span class="story-badge">${story.type === 'pre-wedding' ? 'Pre-Wedding' : 'Wedding'}</span>
+            </div>
+            <div class="card-content">
+              <h3>${story.coupleName}</h3>
+              <p class="card-location">
+                <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                ${story.location}
+              </p>
+              <span class="story-link">View Story →</span>
+            </div>
+          </a>
+        `;
+        storiesGrid.appendChild(card);
+
+        card.querySelector('.story-card-link').addEventListener('click', (e) => {
+          e.preventDefault();
+          openStoryModal(story);
+        });
+      });
+
+      function openStoryModal(story) {
+        const modal = document.getElementById('story-modal');
+        document.getElementById('modal-hero-image').src = story.heroImage;
+        document.getElementById('modal-hero-image').alt = `${story.coupleName} wedding story`;
+        document.getElementById('modal-badge').textContent = story.type === 'pre-wedding' ? 'Pre-Wedding' : 'Wedding';
+        document.getElementById('modal-couple-name').textContent = story.coupleName;
+        document.getElementById('modal-location').textContent = story.location;
+        document.getElementById('modal-date').textContent = story.date;
+
+        const gallery = document.getElementById('modal-gallery');
+        gallery.innerHTML = '';
+        story.images.forEach((image, idx) => {
+          const item = document.createElement('div');
+          item.className = 'story-modal-gallery-item';
+          const img = document.createElement('img');
+          img.src = image;
+          img.alt = `${story.coupleName} gallery ${idx + 1}`;
+          img.loading = 'lazy';
+          const applyOrientation = () => {
+            if (img.naturalHeight > img.naturalWidth) item.classList.add('portrait');
+          };
+          if (img.complete) applyOrientation();
+          else img.addEventListener('load', applyOrientation);
+          item.appendChild(img);
+          gallery.appendChild(item);
+        });
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeStoryModal() {
+        document.getElementById('story-modal').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      document.querySelector('.story-modal-close').addEventListener('click', closeStoryModal);
+      document.querySelector('.story-modal-overlay').addEventListener('click', closeStoryModal);
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeStoryModal(); });
+    });
+  </script>
+</body>
+</html>

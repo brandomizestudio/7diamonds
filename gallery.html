@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="public/Fevicon/IMG_7447.jpg">
+  <title>Wedding Moments & Gallery | 7Diamond Events</title>
+  <meta name="description" content="Explore stunning wedding moments planned and managed by 7Diamond Events — a complete wedding planning & management company in Hisar, India. From intimate Haldi rituals to grand ceremonies, every celebration crafted to perfection.">
+  <meta name="keywords" content="7Diamond Events, wedding gallery, wedding moments, wedding planning Hisar, wedding management company, Haldi ceremony, ring ceremony, luxury weddings India, brandomize web developer Hisar">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://7diamondevents.com/gallery.html">
+  <link rel="alternate" hreflang="en" href="https://7diamondevents.com/gallery.html">
+  <link rel="alternate" hreflang="x-default" href="https://7diamondevents.com/gallery.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wedding Moments & Gallery | 7Diamond Events">
+  <meta property="og:description" content="Explore stunning wedding moments planned and managed by 7Diamond Events — a complete wedding planning & management company in Hisar, India. Every celebration crafted to perfection.">
+  <meta property="og:url" content="https://7diamondevents.com/gallery.html">
+  <meta property="og:site_name" content="7Diamond Events">
+  <meta property="og:image" content="https://7diamondevents.com/public/image-page-data/wedding/UWF09905.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wedding Moments & Gallery | 7Diamond Events">
+  <meta name="twitter:description" content="Explore stunning wedding moments planned and managed by 7Diamond Events — complete wedding planning & management in Hisar, India.">
+  <meta name="twitter:image" content="https://7diamondevents.com/public/image-page-data/wedding/UWF09905.jpeg">
+  <meta name="twitter:site" content="@7diamondevents">
+  <meta name="twitter:creator" content="@7diamondevents">
+
+  <!-- Stylesheets -->
+  <link rel="preload" href="css/style.css?v=3.0" as="style">
+  <link rel="preload" href="css/components.css?v=3.0" as="style">
+  <link rel="stylesheet" href="css/style.css?v=3.0">
+  <link rel="stylesheet" href="css/components.css?v=3.0">
+  <link rel="stylesheet" href="css/animations.css?v=3.0" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/animations.css?v=3.0"></noscript>
+  <style>
+    /* ===== Gallery Hero — Immersive Mosaic ===== */
+    .gallery-hero {
+      position: relative;
+      min-height: 85vh;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background: var(--color-dark);
+      padding: 0;
+    }
+    .gallery-hero-mosaic {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 4px;
+    }
+    .gallery-hero-mosaic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.55;
+      transition: opacity 0.6s ease;
+    }
+    .gallery-hero-mosaic .mosaic-wide { grid-column: span 2; }
+    .gallery-hero-mosaic .mosaic-tall { grid-row: span 2; }
+    .gallery-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(45,42,38,0.95) 0%, rgba(45,42,38,0.6) 40%, rgba(45,42,38,0.2) 100%);
+      z-index: 1;
+    }
+    .gallery-hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem 4rem;
+      width: 100%;
+      animation: fadeInUp 0.8s ease-out;
+    }
+    .gallery-hero-badge {
+      display: inline-block;
+      padding: 0.5rem 1.25rem;
+      background: rgba(197, 160, 89, 0.2);
+      border: 1px solid rgba(197, 160, 89, 0.3);
+      border-radius: 2rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-gold);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .gallery-hero-title {
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      font-weight: 600;
+      color: var(--color-white);
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+    .gallery-hero-subtitle {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.7;
+      max-width: 560px;
+      margin-bottom: 2.5rem;
+    }
+    .gallery-hero-bottom {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+    .gallery-hero-stats {
+      display: flex;
+      gap: 2.5rem;
+    }
+    .gallery-stat {
+      text-align: left;
+    }
+    .gallery-stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-gold);
+      display: block;
+      margin-bottom: 0.125rem;
+      font-family: 'Playfair Display', serif;
+    }
+    .gallery-stat-label {
+      font-size: 0.8125rem;
+      color: rgba(255, 255, 255, 0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+    }
+    .gallery-filters { position: sticky; top: 4rem; z-index: 50; background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid var(--color-silver-200); padding: 1.5rem 0; margin-bottom: 0; }
+    .filter-container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+    .filter-btn { padding: 0.75rem 2rem; border-radius: 2rem; font-weight: 500; font-size: 0.9375rem; background: var(--color-silver-100); color: var(--color-dark-light); border: 1px solid transparent; cursor: pointer; transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .filter-btn:hover { background: var(--color-silver-200); transform: translateY(-1px); }
+    .filter-btn.active { background: var(--color-dark); color: var(--color-white); border-color: var(--color-dark); }
+    .gallery-main { padding: 3rem 0 5rem; background: var(--color-off-white); }
+    .gallery-grid { max-width: 1400px; margin: 0 auto; padding: 0 2rem; column-width: 320px; column-gap: 1.75rem; width: 100%; }
+    .gallery-item { position: relative; display: inline-block; width: 100%; margin: 0 0 1.75rem; border-radius: 1.25rem; background: var(--color-silver-100); cursor: pointer; transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04), 0 1px 4px rgba(0, 0, 0, 0.02); animation: fadeIn 0.5s ease-out; break-inside: avoid; }
+    .gallery-item:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04); }
+    .gallery-item-image { position: relative; width: 100%; aspect-ratio: 3 / 4; overflow: hidden; border-radius: 1.25rem; background: var(--color-silver-100); }
+    .gallery-item-image img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .gallery-item:hover .gallery-item-image img { transform: scale(1.05); }
+    .gallery-item-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.5), transparent); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: flex-end; padding: 1.5rem; }
+    .gallery-item:hover .gallery-item-overlay { opacity: 1; }
+    .gallery-item-category { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 500; color: var(--color-dark); text-transform: capitalize; }
+    /* Lightbox styles */
+    .lightbox { position: fixed; inset: 0; z-index: 9999; background: rgba(0, 0, 0, 0.92); backdrop-filter: blur(8px); display: none; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease-out; }
+    .lightbox.active { display: flex; animation: lightboxFadeIn 0.3s ease-out forwards; }
+    .lightbox-content { position: relative; max-width: 85vw; max-height: 85vh; transform: scale(0.9); opacity: 0; animation: lightboxZoomIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; transition: opacity 0.2s ease-out, transform 0.2s ease-out; }
+    .lightbox-image { max-width: 100%; max-height: 85vh; object-fit: contain; border-radius: 1.5rem; box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5); }
+    @keyframes lightboxFadeIn { to { opacity: 1; } }
+    @keyframes lightboxZoomIn { to { transform: scale(1); opacity: 1; } }
+    .lightbox-close { position: fixed; top: 2rem; right: 2rem; width: 3.5rem; height: 3.5rem; background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); z-index: 10000; }
+    .lightbox-close:hover { background: rgba(255, 255, 255, 0.25); transform: rotate(90deg) scale(1.1); border-color: rgba(255, 255, 255, 0.5); }
+    .lightbox-close svg { stroke: white; width: 24px; height: 24px; }
+    .lightbox-nav { position: fixed; top: 50%; transform: translateY(-50%); width: 3.5rem; height: 3.5rem; background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); z-index: 10000; }
+    .lightbox-nav:hover { background: rgba(255, 255, 255, 0.25); transform: translateY(-50%) scale(1.1); }
+    .lightbox-nav.prev { left: 2rem; }
+    .lightbox-nav.next { right: 2rem; }
+    .lightbox-nav svg { stroke: white; width: 24px; height: 24px; }
+    .lightbox-counter { position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%); background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.3); padding: 0.875rem 1.75rem; border-radius: 2rem; color: white; font-size: 0.9375rem; font-weight: 500; z-index: 10000; }
+    .gallery-loading { text-align: center; padding: 3rem 0; color: var(--color-dark-light); }
+    .gallery-empty { text-align: center; padding: 3rem 2rem; color: var(--color-dark-light); }
+    .gallery-empty h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--color-dark); }
+    /* Responsive media queries for gallery */
+    @media (max-width: 1200px) {
+      .gallery-grid { column-width: 280px; column-gap: 1.5rem; padding: 0 1.75rem; }
+      .gallery-hero-mosaic { grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .gallery-hero { min-height: 70vh; }
+      .gallery-hero-content { padding: 0 1.5rem 3rem; }
+      .gallery-hero-mosaic { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(4, 1fr); }
+      .gallery-hero-title { font-size: 2.25rem; }
+      .gallery-hero-bottom { gap: 2rem; }
+      .gallery-hero-stats { gap: 2rem; }
+      .gallery-stat-number { font-size: 1.5rem; }
+      .gallery-filters { top: 3.5rem; }
+      .gallery-main { padding: 2rem 0 3rem; }
+      .gallery-grid { column-width: 230px; column-gap: 1.25rem; padding: 0 1.5rem; }
+      .lightbox-content { max-width: 90vw; max-height: 80vh; }
+      .lightbox-image { max-height: 80vh; border-radius: 1rem; }
+      .lightbox-close, .lightbox-nav { width: 3rem; height: 3rem; }
+      .lightbox-close { top: 1.5rem; right: 1.5rem; }
+      .lightbox-nav.prev { left: 1rem; }
+      .lightbox-nav.next { right: 1rem; }
+      .lightbox-counter { bottom: 1.5rem; padding: 0.75rem 1.5rem; font-size: 0.875rem; }
+    }
+    @media (max-width: 480px) {
+      .gallery-hero { min-height: 60vh; }
+      .gallery-hero-mosaic { grid-template-columns: repeat(2, 1fr); }
+      .gallery-hero-mosaic .mosaic-wide { grid-column: span 1; }
+      .gallery-hero-mosaic .mosaic-tall { grid-row: span 1; }
+      .gallery-main { padding: 1.5rem 0 2.5rem; }
+      .gallery-grid { column-width: 100%; column-gap: 1rem; padding: 0 1.25rem; }
+      .lightbox-content { max-width: 95vw; max-height: 75vh; }
+      .lightbox-image { max-height: 75vh; border-radius: 0.75rem; }
+      .lightbox-close, .lightbox-nav { width: 2.75rem; height: 2.75rem; }
+      .lightbox-close { top: 1rem; right: 1rem; }
+      .lightbox-nav.prev { left: 0.5rem; }
+      .lightbox-nav.next { right: 0.5rem; }
+      .lightbox-counter { bottom: 1rem; padding: 0.625rem 1.25rem; font-size: 0.8125rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="logo-container">
+        <a href="index.html" class="logo">7Diamond Events</a>
+        <a href="https://brandomize.netlify.app/" target="_blank" class="logo-subtitle" title="Fastest and most creative web developer in Hisar Haryana and across country">by brandomize</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Wedding Moments</a></li>
+        <li><a href="luxury.html">Luxury</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section — Immersive Mosaic -->
+  <section class="gallery-hero">
+    <div class="gallery-hero-mosaic" aria-hidden="true">
+      <img src="public/image-page-data/wedding/5.jpeg" alt="" class="mosaic-tall" loading="eager">
+      <img src="public/image-page-data/haldi/Haldi_05.jpeg" alt="" loading="eager">
+      <img src="public/image-page-data/ring-ceremony/UWF06848.jpeg" alt="" loading="eager">
+      <img src="public/image-page-data/wedding/ANKU4613.jpeg" alt="" loading="eager">
+      <img src="public/image-page-data/wedding/8.jpeg" alt="" class="mosaic-wide" loading="eager">
+      <img src="public/image-page-data/haldi/Haldi_10.jpeg" alt="" loading="eager">
+      <img src="public/image-page-data/wedding/UWF09905.jpeg" alt="" loading="eager">
+      <img src="public/image-page-data/ring-ceremony/00000c.jpeg" alt="" loading="lazy">
+      <img src="public/image-page-data/wedding/18.jpeg" alt="" loading="lazy">
+      <img src="public/image-page-data/wedding/Mehar%20287.jpeg" alt="" class="mosaic-wide" loading="lazy">
+    </div>
+
+    <div class="gallery-hero-content">
+      <span class="gallery-hero-badge">Curated by 7Diamond Events</span>
+      <h1 class="gallery-hero-title">Celebrations We've<br>Brought to Life</h1>
+      <p class="gallery-hero-subtitle">
+        Every image tells a story of love, joy, and meticulous planning. Browse real moments from weddings we've designed, managed, and perfected — from Haldi to Reception.
+      </p>
+      <div class="gallery-hero-bottom">
+        <div class="gallery-hero-stats">
+          <div class="gallery-stat">
+            <span class="gallery-stat-number" id="total-images">0</span>
+            <span class="gallery-stat-label">Moments</span>
+          </div>
+          <div class="gallery-stat">
+            <span class="gallery-stat-number">3</span>
+            <span class="gallery-stat-label">Collections</span>
+          </div>
+          <div class="gallery-stat">
+            <span class="gallery-stat-number">100+</span>
+            <span class="gallery-stat-label">Events</span>
+          </div>
+        </div>
+        <a href="#gallery-grid" class="btn btn-primary btn-large" style="border:1px solid rgba(197,160,89,0.4);">
+          Explore Gallery
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <div class="gallery-filters">
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">All Celebrations</button>
+      <button class="filter-btn" data-filter="wedding">Wedding Day</button>
+      <button class="filter-btn" data-filter="haldi">Haldi Ceremony</button>
+      <button class="filter-btn" data-filter="ring-ceremony">Ring Ceremony</button>
+    </div>
+  </div>
+
+  <!-- Gallery Grid -->
+  <section class="gallery-main">
+    <div class="container">
+      <div class="gallery-loading" id="gallery-loading">
+        <p>Loading images...</p>
+      </div>
+      <div class="gallery-grid" id="gallery-grid"></div>
+      <div class="gallery-empty" id="gallery-empty" style="display: none;">
+        <h3>No images found</h3>
+        <p>Try selecting a different category</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">
+      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+        <path d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+    <button class="lightbox-nav prev" aria-label="Previous">
+      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+        <path d="M15 19l-7-7 7-7"/>
+      </svg>
+    </button>
+    <div class="lightbox-content">
+      <img class="lightbox-image" id="lightbox-image" src="" alt="7Diamond Events wedding gallery">
+    </div>
+    <button class="lightbox-nav next" aria-label="Next">
+      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+        <path d="M9 5l7 7-7 7"/>
+      </svg>
+    </button>
+    <div class="lightbox-counter" id="lightbox-counter">1 / 1</div>
+  </div>
+
+  <!-- SEO Content Block -->
+  <section aria-labelledby="gallery-seo-heading" class="section bg-white">
+    <div class="container" style="max-width: 56rem;">
+      <h2 id="gallery-seo-heading">Our Wedding Gallery — Celebrations Captured Beautifully</h2>
+      <p>At 7Diamond Events, every wedding we plan is a reflection of the couple's unique love story. Our gallery showcases the stunning decor, joyful ceremonies, and deeply emotional moments from weddings we have meticulously planned and managed across Hisar, Haryana and surrounding areas. From the vibrant colours of Haldi ceremonies to the grandeur of the main wedding day, each celebration is designed with precision and brought to life with passion.</p>
+      <p>As a complete wedding planning and management company, we handle every detail — luxurious floral arrangements, elegant stage setups, seamless guest coordination, and perfectly timed event flows. The moments you see in this gallery are the result of months of careful planning, creative vision, and dedicated execution by the 7Diamond Events team. We believe that every couple deserves a celebration that feels effortless and looks extraordinary.</p>
+      <p>Whether it's a lavish destination wedding or an intimate ceremony in Hisar, our team transforms your vision into reality. Browse through our collections to experience the magic of weddings planned by 7Diamond Events, and reach out to begin planning your own unforgettable celebration.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>7Diamond Events</h3>
+          <p>Complete Wedding Planning & Management Company designed for couples who seek sophistication, exclusivity, and flawless execution.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Wedding Moments</a></li>
+            <li><a href="luxury.html">Luxury</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@7diamondevents.com">info@7diamondevents.com</a></li>
+            <li><a href="tel:+917015052499">+91 70150 52499</a></li>
+            <li>Hisar, India</li>
+            <li><a href="https://instagram.com/7diamondevents" target="_blank" rel="noopener">@7diamondevents</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 7Diamond Events. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-credit">
+          Secured & Created by
+          <a href="https://brandomize.netlify.app/" target="_blank" rel="noopener" title="Fastest and most creative web developer in Hisar Haryana">brandomize.studio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/gallery-data.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="public/Fevicon/IMG_7447.jpg">
+  <title>Complete Wedding Planning & Management | 7Diamond Events</title>
+  <meta name="description"
+    content="7Diamond Events is a full-service wedding management company specializing in creating seamless, elegant, and unforgettable wedding experiences. Website by brandomize — the fastest and most creative web developer in Hisar Haryana and across country.">
+  <meta name="keywords"
+    content="7Diamond Events, Complete Wedding Planning, Wedding Management Company, Luxury Wedding Planner, Destination Weddings, Wedding Decor, brandomize web developer Hisar">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Complete Wedding Planning & Management | 7Diamond Events">
+  <meta property="og:description"
+    content="7Diamond Events — Complete Wedding Planning & Management Company. We design unforgettable wedding experiences.">
+  <meta property="og:site_name" content="7Diamond Events">
+  <meta property="og:image" content="public/image-page-data/wedding/UWF09905.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Complete Wedding Planning & Management | 7Diamond Events">
+  <meta name="twitter:description"
+    content="7Diamond Events — Complete Wedding Planning & Management Company. We design unforgettable wedding experiences.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=3.0">
+  <link rel="stylesheet" href="css/components.css?v=3.0">
+  <link rel="stylesheet" href="css/animations.css?v=3.0" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/animations.css?v=3.0"></noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EventPlanner",
+    "name": "7Diamond Events",
+    "description": "Complete Wedding Planning & Management Company specializing in luxury weddings across India.",
+    "url": "https://7diamondevents.com",
+    "telephone": "+91 70150 52499",
+    "email": "info@7diamondevents.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hisar",
+      "addressRegion": "Haryana",
+      "addressCountry": "IN"
+    },
+    "areaServed": ["Hisar", "Delhi NCR", "Noida", "Gurugram", "India"],
+    "priceRange": "$$-$$$$"
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="logo-container">
+        <a href="index.html" class="logo">7Diamond Events</a>
+        <a href="https://brandomize.netlify.app/" target="_blank" class="logo-subtitle"
+          title="Fastest and most creative web developer in Hisar Haryana and across country">by brandomize</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Wedding Moments</a></li>
+        <li><a href="luxury.html">Luxury</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <style>
+    .header:not(.scrolled) .logo,
+    .header:not(.scrolled) .logo-subtitle { color: #fff; }
+    .header:not(.scrolled) .nav-links a { color: rgba(255,255,255,0.8); }
+    .header:not(.scrolled) .nav-links a:hover { color: #fff; }
+    .header:not(.scrolled) .mobile-menu-btn svg { stroke: #fff; }
+    .header:not(.scrolled) .nav-links .btn.btn-primary { color: var(--color-dark); }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      height: 100svh;
+      min-height: 540px;
+      overflow: hidden;
+      background: #0c0a08;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+    }
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center bottom;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(12,10,8,0.25) 0%, rgba(12,10,8,0.1) 40%, rgba(12,10,8,0.55) 100%);
+    }
+    .hero-content {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 2rem;
+    }
+    .hero-inner {
+      max-width: 680px;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5.5vw, 3.75rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 2.5rem;
+      animation: fadeInUp 0.7s ease-out 0.2s both;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--color-gold);
+    }
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeInUp 0.7s ease-out 0.45s both;
+    }
+    .hero-btns .btn-outline {
+      color: rgba(255,255,255,0.85);
+      border-color: rgba(255,255,255,0.25);
+    }
+    .hero-btns .btn-outline:hover {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.6);
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .hero { min-height: 500px; }
+      .hero-content { padding: 0 1.5rem; }
+      .hero-title { font-size: 1.75rem; margin-bottom: 2rem; }
+      .hero-btns { flex-direction: column; align-items: center; }
+      .hero-btns .btn-large { width: 100%; max-width: 300px; justify-content: center; }
+    }
+    @media (max-width: 480px) {
+      .hero-title { font-size: 1.5rem; line-height: 1.22; }
+      .hero-content { padding: 0 1.125rem; }
+    }
+  </style>
+
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="public/image-page-data/wedding/ANKU4613.jpeg" alt="Bride in gold jewelry against dramatic lighting — 7Diamond Events" loading="eager">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-inner">
+        <h1 class="hero-title">We Don't Just Plan Weddings.<br>We Design <em>Experiences.</em></h1>
+        <div class="hero-btns">
+          <a href="contact.html" class="btn btn-primary btn-large">
+            Book a Consultation
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="services.html" class="btn btn-outline btn-large">View Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST STRIP ===== -->
+  <section class="section bg-silver" style="padding: 3rem 0;">
+    <div class="container">
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem 3rem;text-align:center;">
+        <div style="display:flex;align-items:center;gap:0.75rem;">
+          <span style="width:2.5rem;height:2.5rem;background:var(--color-gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+            <svg width="16" height="16" fill="none" stroke="var(--color-gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <span style="font-weight:500;color:var(--color-dark);font-size:0.9375rem;">Detailed Planning</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.75rem;">
+          <span style="width:2.5rem;height:2.5rem;background:var(--color-gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+            <svg width="16" height="16" fill="none" stroke="var(--color-gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <span style="font-weight:500;color:var(--color-dark);font-size:0.9375rem;">Strong Vendor Network</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.75rem;">
+          <span style="width:2.5rem;height:2.5rem;background:var(--color-gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+            <svg width="16" height="16" fill="none" stroke="var(--color-gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <span style="font-weight:500;color:var(--color-dark);font-size:0.9375rem;">Budget Transparency</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.75rem;">
+          <span style="width:2.5rem;height:2.5rem;background:var(--color-gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+            <svg width="16" height="16" fill="none" stroke="var(--color-gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <span style="font-weight:500;color:var(--color-dark);font-size:0.9375rem;">On-Time Execution</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.75rem;">
+          <span style="width:2.5rem;height:2.5rem;background:var(--color-gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+            <svg width="16" height="16" fill="none" stroke="var(--color-gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <span style="font-weight:500;color:var(--color-dark);font-size:0.9375rem;">Stress-Free Experience</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES OVERVIEW ===== -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-description">From conceptualization to execution, we manage every detail with precision, creativity, and professionalism.</p>
+      </div>
+      <div id="services-preview" class="grid grid-cols-3"></div>
+      <div class="text-center mt-4">
+        <a href="services.html" class="btn btn-primary">Explore All Services →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WE MANAGE EVERY FUNCTION ===== -->
+  <style>
+    .fn-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    .fn-card {
+      background: #fff;
+      border: 1px solid var(--color-silver-200);
+      border-radius: 1rem;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .fn-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+    }
+    .fn-icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.35rem;
+      background: var(--color-gold-light);
+    }
+    .fn-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--color-dark);
+      margin: 0;
+    }
+    .fn-card p {
+      font-size: 0.875rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+      margin: 0;
+    }
+    @media (max-width: 768px) {
+      .fn-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+      .fn-card { padding: 1.5rem 1.25rem; }
+    }
+    @media (max-width: 480px) {
+      .fn-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <section class="section bg-silver">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">We Manage Every Function</h2>
+        <p class="section-description">From your first 'Yes' to your final farewell, we handle everything so you can enjoy your big day stress-free.</p>
+      </div>
+      <div class="fn-grid fade-in">
+        <div class="fn-card">
+          <div class="fn-icon">💛</div>
+          <h3>Haldi</h3>
+          <p>Vibrant turmeric celebrations with themed decor, floral setups, and joyful coordination.</p>
+        </div>
+        <div class="fn-card">
+          <div class="fn-icon">🌸</div>
+          <h3>Mehendi</h3>
+          <p>Artistic mehendi ceremonies with elegant seating, music, and a relaxed bohemian vibe.</p>
+        </div>
+        <div class="fn-card">
+          <div class="fn-icon">💃</div>
+          <h3>Sangeet</h3>
+          <p>High-energy dance nights with stage design, DJ coordination, and choreography management.</p>
+        </div>
+        <div class="fn-card">
+          <div class="fn-icon">🔥</div>
+          <h3>Wedding Ceremony</h3>
+          <p>Baraat coordination, mandap design, ritual management, and bride & groom grand entries.</p>
+        </div>
+        <div class="fn-card">
+          <div class="fn-icon">🌙</div>
+          <h3>Reception</h3>
+          <p>Elegant reception flow, stage lighting, guest seating, and a seamless evening experience.</p>
+        </div>
+        <div class="fn-card">
+          <div class="fn-icon">🍾</div>
+          <h3>After Party</h3>
+          <p>Late-night celebrations with curated entertainment, premium ambiance, and perfect send-offs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EMOTIONAL CTA ===== -->
+  <section class="section bg-dark" style="padding:5rem 0;">
+    <div class="container text-center">
+      <p style="color:var(--color-gold);text-transform:uppercase;letter-spacing:0.15em;font-size:0.8125rem;font-weight:600;margin-bottom:1.5rem;">Every love story deserves a magical celebration</p>
+      <h2 class="section-title" style="color:white;font-size:clamp(2rem,5vw,3.5rem);max-width:48rem;margin:0 auto 1.5rem;">Let's Turn Your Dream Wedding Into Reality</h2>
+      <p class="section-description" style="color:rgba(255,255,255,0.7);max-width:36rem;margin:0 auto 2.5rem;">At 7Diamond Events, we believe that your wedding should be as unique as your love story. Let us craft an experience you'll cherish forever.</p>
+      <a href="contact.html" class="btn btn-primary btn-large">Talk to Our Team</a>
+    </div>
+  </section>
+
+  <!-- ===== WEDDING STORIES (Real data) ===== -->
+  <section class="section bg-silver">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Real Wedding Stories</h2>
+        <p class="section-description">Browse real weddings and pre-wedding stories we've had the privilege of planning and capturing.</p>
+      </div>
+      <div id="featured-stories" class="grid grid-cols-3"></div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY STRIP ===== -->
+  <section class="gallery-section">
+    <div class="container gallery-header">
+      <h2 class="gallery-title">Wedding Moments</h2>
+      <p class="section-description">A curated gallery of stunning celebrations, decor designs, and unforgettable moments.</p>
+    </div>
+    <div class="gallery-wrapper container">
+      <button class="gallery-arrow gallery-arrow-left" aria-label="Previous">
+        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M15 19l-7-7 7-7"></path></svg>
+      </button>
+      <div class="gallery-container no-scrollbar">
+        <div class="gallery-item"><div class="gallery-item-image"><img src="public/image-page-data/wedding/Mehar%2096.jpeg" alt="Wedding moment" loading="lazy"></div></div>
+        <div class="gallery-item"><div class="gallery-item-image"><img src="public/image-page-data/ring-ceremony/UWF06848.jpeg" alt="Ring ceremony" loading="lazy"></div></div>
+        <div class="gallery-item"><div class="gallery-item-image"><img src="public/image-page-data/haldi/Haldi_05.jpeg" alt="Haldi ceremony" loading="lazy"></div></div>
+        <div class="gallery-item"><div class="gallery-item-image"><img src="public/image-page-data/wedding/ANKU4613.jpeg" alt="Wedding celebration" loading="lazy"></div></div>
+        <div class="gallery-item"><div class="gallery-item-image"><img src="public/image-page-data/ring-ceremony/00000c.jpeg" alt="Engagement moment" loading="lazy"></div></div>
+        <div class="gallery-item"><div class="gallery-item-image"><img src="public/image-page-data/haldi/Haldi_10.jpeg" alt="Haldi ritual" loading="lazy"></div></div>
+        <div class="gallery-item"><div class="gallery-item-image"><img src="public/image-page-data/wedding/UWF09905.jpeg" alt="Wedding joy" loading="lazy"></div></div>
+        <div class="gallery-item"><div class="gallery-item-image"><img src="public/image-page-data/wedding/Mehar%20287.jpeg" alt="Wedding dance" loading="lazy"></div></div>
+      </div>
+      <button class="gallery-arrow gallery-arrow-right" aria-label="Next">
+        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5l7 7-7 7"></path></svg>
+      </button>
+    </div>
+    <div class="text-center" style="margin-top:2rem;">
+      <a href="gallery.html" class="btn btn-outline">View Full Gallery →</a>
+    </div>
+  </section>
+
+  <!-- ===== LUXURY TEASER ===== -->
+  <section class="section about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-badge">Luxury Weddings</span>
+          <h2 class="about-title">Curated. Elegant. Exceptional.</h2>
+          <p class="about-lead">We craft bespoke wedding experiences designed for discerning clients who seek sophistication, exclusivity, and flawless execution.</p>
+          <p class="about-text">From signature theme development and designer mandap concepts to destination wedding logistics and concert-level production — we specialize in transforming grand visions into timeless celebrations.</p>
+          <ul class="about-features">
+            <li>
+              <span class="feature-check"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg></span>
+              <span>Bespoke Wedding Design & Luxury Floral Styling</span>
+            </li>
+            <li>
+              <span class="feature-check"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg></span>
+              <span>Destination Weddings — India & International</span>
+            </li>
+            <li>
+              <span class="feature-check"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg></span>
+              <span>High-End Production & Celebrity Management</span>
+            </li>
+          </ul>
+          <a href="luxury.html" class="btn btn-primary mt-4">Explore Luxury Weddings</a>
+        </div>
+        <div class="about-image-wrapper">
+          <img src="public/image-page-data/wedding/5.jpeg" alt="Luxury wedding experience by 7Diamond Events" class="about-image">
+          <div class="about-glass-card">
+            <div class="glass-stat">100+</div>
+            <div class="glass-label">Weddings Planned</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="section bg-silver">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Why Couples Choose Us</h2>
+        <p class="section-description">We combine strategic planning with artistic direction to deliver weddings that reflect the couple's personality and vision.</p>
+      </div>
+      <div class="grid grid-cols-3">
+        <div class="feature-card stagger-item">
+          <div class="feature-icon">
+            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+          </div>
+          <h3>Bespoke Design</h3>
+          <p>Signature theme development, luxury floral styling, and architectural stage installations tailored to your vision.</p>
+        </div>
+        <div class="feature-card stagger-item">
+          <div class="feature-icon">
+            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3>Flawless Execution</h3>
+          <p>On-time execution with dedicated coordinators ensuring every function runs seamlessly from start to finish.</p>
+        </div>
+        <div class="feature-card stagger-item">
+          <div class="feature-icon">
+            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3>Guest Hospitality</h3>
+          <p>RSVP management, airport transfers, hotel bookings, welcome hampers, and curated guest experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="seo-content" itemscope itemtype="https://schema.org/FAQPage">
+    <div class="container">
+      <h2 class="section-title text-center">Frequently Asked Questions</h2>
+      <p class="section-description text-center mb-4">Everything you need to know about working with 7Diamond Events.</p>
+      <div class="faq-grid">
+        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-item">
+          <details class="faq-details">
+            <summary class="faq-summary" itemprop="name">
+              What services does 7Diamond Events offer?
+              <span class="faq-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            </summary>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="faq-answer">
+              <p itemprop="text">We offer end-to-end wedding management including pre-wedding planning, theme & decor design, event production, guest hospitality, ceremony management (Haldi, Mehendi, Sangeet, Wedding, Reception), photography & videography coordination, and post-wedding services like album coordination and vendor settlements.</p>
+            </div>
+          </details>
+        </div>
+        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-item">
+          <details class="faq-details">
+            <summary class="faq-summary" itemprop="name">
+              How far in advance should we book?
+              <span class="faq-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            </summary>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="faq-answer">
+              <p itemprop="text">We recommend booking 6-12 months in advance for peak wedding season (October-March). For destination weddings, booking 12+ months ahead ensures the best venue availability and vendor coordination.</p>
+            </div>
+          </details>
+        </div>
+        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-item">
+          <details class="faq-details">
+            <summary class="faq-summary" itemprop="name">
+              Do you handle destination weddings?
+              <span class="faq-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            </summary>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="faq-answer">
+              <p itemprop="text">Yes, we specialize in destination weddings across India and internationally. Our services include venue scouting, luxury guest logistics, curated hospitality experiences, and complete on-ground management at your chosen destination.</p>
+            </div>
+          </details>
+        </div>
+        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-item">
+          <details class="faq-details">
+            <summary class="faq-summary" itemprop="name">
+              What is your budget range?
+              <span class="faq-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            </summary>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="faq-answer">
+              <p itemprop="text">We work across a wide range of budgets — from elegant mid-range celebrations to ultra-luxury bespoke weddings. During our initial consultation, we'll understand your vision and create a transparent budget plan that maximizes value without compromises.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT CTA ===== -->
+  <section id="contact" class="section bg-silver" style="padding:5rem 0;">
+    <div class="container text-center">
+      <h2 class="section-title">Ready to Plan Your Dream Wedding?</h2>
+      <p class="section-description">Book a free consultation with our expert wedding planners. Let's make your vision a reality.</p>
+      <div class="flex justify-center gap-2" style="margin-top:2rem;">
+        <a href="contact.html" class="btn btn-primary">Get Started</a>
+        <a href="https://wa.me/917015052499" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Modal -->
+  <div id="story-modal" class="story-modal">
+    <div class="story-modal-overlay"></div>
+    <div class="story-modal-content">
+      <button class="story-modal-close" aria-label="Close">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="story-modal-body">
+        <div class="story-modal-hero">
+          <img id="modal-hero-image" src="" alt="Wedding story highlight">
+          <div class="story-modal-badge" id="modal-badge"></div>
+        </div>
+        <div class="story-modal-info">
+          <h2 id="modal-couple-name"></h2>
+          <div class="story-modal-meta">
+            <span id="modal-location"></span>
+            <span class="story-modal-separator">•</span>
+            <span id="modal-date"></span>
+          </div>
+          <div class="story-modal-gallery" id="modal-gallery"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>7Diamond Events</h3>
+          <p>Complete Wedding Planning & Management Company designed for couples who seek sophistication, exclusivity, and flawless execution.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Wedding Moments</a></li>
+            <li><a href="luxury.html">Luxury</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@7diamondevents.com">info@7diamondevents.com</a></li>
+            <li><a href="tel:+917015052499">+91 70150 52499</a></li>
+            <li>Hisar, India</li>
+            <li><a href="https://instagram.com/7diamondevents" target="_blank" rel="noopener">@7diamondevents</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 7Diamond Events. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-credit">
+          Secured & Created by
+          <a href="https://brandomize.netlify.app/" target="_blank" rel="noopener" title="Fastest and most creative web developer in Hisar Haryana">brandomize.studio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/services-data.js" defer></script>
+  <script src="js/stories-data.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Services Preview (first 3)
+      const servicesContainer = document.getElementById('services-preview');
+      if (servicesContainer && typeof servicesData !== 'undefined') {
+        servicesData.slice(0, 3).forEach(service => {
+          const card = document.createElement('div');
+          card.className = 'feature-card stagger-item';
+          card.innerHTML = `
+            <div style="aspect-ratio:4/3;border-radius:var(--radius-xl);overflow:hidden;margin-bottom:1.5rem;">
+              <img src="${service.image}" alt="${service.title}" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;">
+            </div>
+            <h3>${service.title}</h3>
+            <p>${service.description}</p>
+          `;
+          servicesContainer.appendChild(card);
+        });
+      }
+
+      // Wedding Stories (first 3)
+      const storiesContainer = document.getElementById('featured-stories');
+      if (!storiesContainer) return;
+      const stories = typeof storiesData !== 'undefined' ? storiesData : null;
+      if (!stories || !Array.isArray(stories) || stories.length === 0) return;
+
+      stories.slice(0, 3).forEach(story => {
+        const card = document.createElement('div');
+        card.className = 'story-card';
+        card.innerHTML = `
+          <a href="#" class="story-card-link" data-story-id="${story.id}">
+            <div class="card-image">
+              <img src="${story.heroImage}" alt="${story.coupleName} — wedding story" loading="lazy">
+              <span class="story-badge">${story.type === 'pre-wedding' ? 'Pre-Wedding' : 'Wedding'}</span>
+            </div>
+            <div class="card-content">
+              <h3>${story.coupleName}</h3>
+              <p class="card-location">
+                <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                ${story.location}
+              </p>
+              <span class="story-link">View Story →</span>
+            </div>
+          </a>
+        `;
+        storiesContainer.appendChild(card);
+
+        card.querySelector('.story-card-link').addEventListener('click', (e) => {
+          e.preventDefault();
+          openStoryModal(story);
+        });
+      });
+
+      function openStoryModal(story) {
+        const modal = document.getElementById('story-modal');
+        document.getElementById('modal-hero-image').src = story.heroImage;
+        document.getElementById('modal-hero-image').alt = `${story.coupleName} wedding story`;
+        document.getElementById('modal-badge').textContent = story.type === 'pre-wedding' ? 'Pre-Wedding' : 'Wedding';
+        document.getElementById('modal-couple-name').textContent = story.coupleName;
+        document.getElementById('modal-location').textContent = story.location;
+        document.getElementById('modal-date').textContent = story.date;
+
+        const gallery = document.getElementById('modal-gallery');
+        gallery.innerHTML = '';
+        story.images.forEach((image, index) => {
+          const item = document.createElement('div');
+          item.className = 'story-modal-gallery-item';
+          const img = document.createElement('img');
+          img.src = image;
+          img.alt = `${story.coupleName} gallery ${index + 1}`;
+          img.loading = 'lazy';
+          const applyOrientation = () => {
+            if (img.naturalHeight > img.naturalWidth) item.classList.add('portrait');
+          };
+          if (img.complete) applyOrientation();
+          else img.addEventListener('load', applyOrientation);
+          item.appendChild(img);
+          gallery.appendChild(item);
+        });
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeStoryModal() {
+        document.getElementById('story-modal').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      document.querySelector('.story-modal-close').addEventListener('click', closeStoryModal);
+      document.querySelector('.story-modal-overlay').addEventListener('click', closeStoryModal);
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeStoryModal(); });
+    });
+  </script>
+
+</body>
+</html>
