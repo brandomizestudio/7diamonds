@@ -28,6 +28,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/metropolis" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css?v=3.0">
   <link rel="stylesheet" href="css/components.css?v=3.0">
@@ -87,8 +88,8 @@
     /* New Header Styles Override */
     .header.new-header {
       position: relative !important;
-      background: #f4f3ef !important; /* matches the warm off-white in the image */
-      padding: 1.5rem 2rem !important;
+      background: #f4f3ef !important;
+      padding: 0.875rem 1.5rem !important;
       border-bottom: none !important;
     }
     .header.new-header.scrolled {
@@ -105,6 +106,7 @@
       max-width: 1400px;
       margin: 0 auto;
       padding: 0 !important;
+      gap: 0.5rem;
     }
 
     .center-logo {
@@ -120,7 +122,7 @@
     }
     .logo-simple {
       font-family: 'Playfair Display', serif;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 400;
       color: #000;
       line-height: 1;
@@ -142,13 +144,13 @@
       flex-grow: 1;
     }
     .split-nav a {
-      font-family: sans-serif !important;
-      font-size: 0.75rem !important;
+      font-family: 'Metropolis', sans-serif !important;
+      font-size: 0.7rem !important;
       text-transform: uppercase;
-      letter-spacing: 0.15em !important;
+      letter-spacing: 0.12em !important;
       color: #777 !important;
       text-decoration: none;
-      padding: 0.5rem 1rem !important;
+      padding: 0.35rem 0.75rem !important;
       background: none !important;
       border: none !important;
       font-weight: 400 !important;
@@ -234,7 +236,7 @@
     }
     .hero-title-top {
       font-family: 'Instrument Serif', serif;
-      font-size: clamp(3rem, 7vw, 6rem);
+      font-size: clamp(2rem, 4.5vw, 3.5rem);
       font-weight: 400;
       color: #fff;
       line-height: 1;
@@ -243,9 +245,14 @@
       margin-bottom: 0.1em;
       animation: fadeInUp 0.7s ease-out 0.2s both;
     }
+    .hero-title-top em {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      text-transform: uppercase;
+    }
     .hero-title-bottom {
       font-family: 'Instrument Serif', serif;
-      font-size: clamp(3.5rem, 8vw, 7.5rem);
+      font-size: clamp(2.25rem, 5.5vw, 4.25rem);
       font-weight: 400;
       color: #fff;
       line-height: 1;
@@ -254,13 +261,18 @@
       margin-bottom: 1.5rem;
       animation: fadeInUp 0.7s ease-out 0.3s both;
     }
-    .hero-subtitle {
+    .hero-title-bottom em {
       font-family: 'Instrument Serif', serif;
-      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      font-style: italic;
+      text-transform: uppercase;
+    }
+    .hero-subtitle {
+      font-family: 'Metropolis', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: clamp(0.9rem, 1.5vw, 1.1rem);
       color: #eaeaea;
-      line-height: 1.4;
-      max-width: 600px;
-      margin: 0 auto 3rem auto;
+      line-height: 1.5;
+      max-width: 520px;
+      margin: 0 auto 2.5rem auto;
       font-weight: 400;
       letter-spacing: 0.02em;
       animation: fadeInUp 0.7s ease-out 0.4s both;
@@ -287,13 +299,13 @@
     @media (max-width: 768px) {
       .hero { min-height: 500px; }
       .hero-content { padding: 0 1.5rem; }
-      .hero-title-top { font-size: 2rem; }
-      .hero-title-bottom { font-size: 2.5rem; }
-      .hero-subtitle { margin-bottom: 2.5rem; }
+      .hero-title-top { font-size: 1.65rem; }
+      .hero-title-bottom { font-size: 2rem; }
+      .hero-subtitle { margin-bottom: 2rem; font-size: 0.95rem; }
     }
     @media (max-width: 480px) {
-      .hero-title-top { font-size: 1.75rem; }
-      .hero-title-bottom { font-size: 2.25rem; }
+      .hero-title-top { font-size: 1.4rem; }
+      .hero-title-bottom { font-size: 1.75rem; }
       .hero-content { padding: 0 1.125rem; }
     }
   </style>
@@ -305,8 +317,8 @@
     </div>
     <div class="hero-content">
       <div class="hero-inner">
-        <h1 class="hero-title-top">CREATE MAGICAL</h1>
-        <div class="hero-title-bottom">WEDDING MOMENTS</div>
+        <h1 class="hero-title-top">CREATE <em>MAGICAL</em></h1>
+        <div class="hero-title-bottom">WEDDING <em>MOMENTS</em></div>
         <p class="hero-subtitle">At A Charmed Affair, we believe every event tells a story,<br>and we're here to make yours unforgettable.</p>
         <a href="contact.html" class="hero-link">START YOUR JOURNEY</a>
       </div>
@@ -340,8 +352,7 @@
       font-size: 0.65rem;
       font-weight: 600;
       color: #777;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.08em;
       margin-bottom: 1.5rem;
       display: block;
     }
@@ -432,7 +443,7 @@
     <div class="intimate-container">
       <div class="intimate-content">
         <span class="intimate-tag">Tailored to your unique love</span>
-        <h2 class="intimate-title">CAPTURING <em>your</em><br>INTIMATE MOMENTS<br><em>to last a</em> LIFETIME</h2>
+        <h2 class="intimate-title">Capturing <em>your</em><br>intimate moments<br><em>to last a</em> lifetime</h2>
         <p class="intimate-text">We specialize in crafting personalized experiences that capture the essence of your unique love story.</p>
         <a href="contact.html" class="intimate-btn">Start Your Journey</a>
       </div>
@@ -455,8 +466,7 @@
       font-size: 0.65rem;
       font-weight: 600;
       color: #777;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.08em;
       margin-bottom: 1rem;
       display: block;
     }
@@ -506,8 +516,7 @@
       font-weight: 400;
       color: #000;
       margin-bottom: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.02em;
     }
     .offering-card p {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -541,33 +550,33 @@
   <section class="offerings-section">
     <div class="container">
       <span class="offerings-tag">Take a Peek</span>
-      <h2 class="offerings-title"><em>The</em> OFFERINGS</h2>
+      <h2 class="offerings-title"><em>The</em> Offerings</h2>
       
       <div class="offerings-grid">
         <div class="offering-card">
           <div class="offering-img-wrapper">
             <img src="public/image-page-data/wedding/Mehar%2096.jpeg" alt="Weddings" loading="lazy">
           </div>
-          <h3>WEDDINGS</h3>
+          <h3>Weddings</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
         </div>
         <div class="offering-card">
           <div class="offering-img-wrapper">
             <img src="public/image-page-data/wedding/5.jpeg" alt="Elopements" loading="lazy">
           </div>
-          <h3>ELOPEMENTS</h3>
+          <h3>Elopements</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
         </div>
         <div class="offering-card">
           <div class="offering-img-wrapper">
             <img src="public/image-page-data/ring-ceremony/00000c.jpeg" alt="Couples" loading="lazy">
           </div>
-          <h3>COUPLES</h3>
+          <h3>Couples</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
         </div>
       </div>
       
-      <a href="services.html" class="offerings-link">Explore Services</a>
+      <a href="services.html" class="offerings-link">Explore services</a>
     </div>
   </section>
 
@@ -866,8 +875,7 @@
       font-size: 0.65rem;
       font-weight: 600;
       color: #888;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.08em;
       margin-bottom: 1.5rem;
       display: block;
     }
@@ -877,7 +885,6 @@
       font-weight: 400;
       color: #333;
       line-height: 1.05;
-      text-transform: uppercase;
       letter-spacing: 0.02em;
       margin-bottom: 1.5rem;
     }
@@ -894,8 +901,7 @@
       font-size: 0.75rem;
       font-weight: 500;
       color: #333;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.08em;
       text-decoration: none;
       padding-bottom: 0.5rem;
       border-bottom: 1px solid #ccc;
@@ -937,9 +943,9 @@
       </div>
       <div class="flawless-content">
         <span class="flawless-tag">Enjoy Yourself</span>
-        <h2 class="flawless-title">YOUR JOURNEY TO<br>FLAWLESS CELEBRATIONS<br>BEGINS WITH A PLAN</h2>
+        <h2 class="flawless-title">Your journey to<br>flawless celebrations<br>begins with a plan</h2>
         <p class="flawless-text">Specializing in bespoke wedding and event planning, we transform your vision into magical moments. Whether it's an intimate gathering or a grand celebration, our dedicated team ensures every detail is meticulously crafted with love, creativity, and intentionality</p>
-        <a href="services.html" class="flawless-link">Explore Event</a>
+        <a href="services.html" class="flawless-link">Explore event</a>
       </div>
       <div class="flawless-img-right">
         <img src="public/image-page-data/wedding/13.jpeg" alt="Couple holding hands" loading="lazy">
