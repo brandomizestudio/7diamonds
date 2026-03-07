@@ -83,6 +83,73 @@ function initSmoothScroll() {
   });
 }
 
+// Vertical scroll parallax for the first five homepage sections
+function initSectionParallax() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const sections = Array.from(document.querySelectorAll('[data-scroll-parallax]')).slice(0, 5);
+  if (!sections.length) return;
+
+  const groups = sections
+    .map(section => ({
+      section,
+      layers: Array.from(section.querySelectorAll('.parallax-layer'))
+    }))
+    .filter(group => group.layers.length > 0);
+
+  if (!groups.length) return;
+
+  const isMobileMedia = window.matchMedia('(max-width: 900px)');
+  let viewportHeight = window.innerHeight;
+  let rafId = null;
+
+  const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+
+  function updateParallax() {
+    const mobileFactor = isMobileMedia.matches ? 0.5 : 1;
+
+    groups.forEach(({ section, layers }) => {
+      const rect = section.getBoundingClientRect();
+      const isVisible = rect.bottom > -viewportHeight * 0.25 && rect.top < viewportHeight * 1.25;
+      if (!isVisible) return;
+
+      const progress = ((viewportHeight - rect.top) / (viewportHeight + rect.height)) * 2 - 1;
+      const boundedProgress = clamp(progress, -1, 1);
+
+      layers.forEach((layer, layerIndex) => {
+        const fallbackSpeed = layerIndex % 2 === 0 ? -0.12 : 0.1;
+        const speed = Number.parseFloat(layer.dataset.parallaxSpeed || '') || fallbackSpeed;
+        const scale = Number.parseFloat(layer.dataset.parallaxScale || '') || 1;
+        const rotate = Number.parseFloat(layer.dataset.parallaxRotate || '') || 0;
+
+        const y = boundedProgress * 90 * speed * mobileFactor;
+        layer.style.transform = `translate3d(0, ${y.toFixed(2)}px, 0) scale(${scale}) rotate(${rotate}deg)`;
+      });
+    });
+
+    rafId = null;
+  }
+
+  function requestUpdate() {
+    if (rafId) return;
+    rafId = window.requestAnimationFrame(updateParallax);
+  }
+
+  window.addEventListener('scroll', requestUpdate, { passive: true });
+  window.addEventListener('resize', () => {
+    viewportHeight = window.innerHeight;
+    requestUpdate();
+  });
+
+  if (isMobileMedia.addEventListener) {
+    isMobileMedia.addEventListener('change', requestUpdate);
+  } else if (isMobileMedia.addListener) {
+    isMobileMedia.addListener(requestUpdate);
+  }
+
+  requestUpdate();
+}
+
 // Mobile menu toggle
 function initMobileMenu() {
   const menuBtn = document.querySelector('.mobile-menu-btn');
@@ -129,6 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initGallery();
   initSmoothScroll();
+  initSectionParallax();
   initMobileMenu();
   
   // Add page enter animation
@@ -167,4 +235,3 @@ const icons = {
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { icons, formatCurrency };
 }
-
